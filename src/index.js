@@ -9,7 +9,6 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route exact index element={<App />}/>
-      
     </Routes>
   </BrowserRouter>
 );
