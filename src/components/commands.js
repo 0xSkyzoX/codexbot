@@ -7,6 +7,7 @@ export default function Commands() {
             title={item.title}
             description={item.description}
             icon={item.icon}
+            href={item.href}
         ></CmdItem>
     })
 }

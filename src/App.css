@@ -64,12 +64,14 @@
 }
 
 */
-@media (max-width: 1314px) {
-    .start-button-index {
-        padding: 30px 70px;
-        font-size: 25px;
-        margin-top: 70px;
-        border-radius: 20px;
+@media (max-width: 500px) {
+    .title-index-page{
+        margin-top: 35px;
+        text-align: start;
+        margin-left: 35px;
+        margin-right: 0;
+        margin-bottom: 0;
+        font-size: 34px;
     }
     .img-coding-index {
         display: none;
@@ -79,32 +81,38 @@
         display: none;
     }
     .description-index-page {
-        font-size: auto;
-        margin-left: 100px;
+        font-size: 11px;
+        margin: 0;
     }
-    .title-index-page {
-        margin-left: 110px;
-        font-size : 100px;
+    .description-index-page {
+        display: none;
     }
-    
+    .description-index-page-mobile {
+        display: flex;
+        color: rgb(194, 194, 194);
+        margin-top: 25px;
+        font-size: 11px;
+        margin-left: 31px;
+    }
+    .start-button-index {
+        padding: 13px 28px;
+        font-size: 12px;
+        border-radius: 10px;
+        margin: 20px 0px 0px 36px;
+    }
+    .botavatar {
+        display: none;
+    }
     .login-button {
-        padding: 50px 130px;
-        font-size: 40px;
-        margin-right: 40px;
-        display: none
+        display: none;
     }
-    .login-btn-name {
-        margin-top: -22px;
-        margin-left: -50px;
-    }.botavatar {
-        margin-left: 25px;
-        width: 120px;
-        height: 120px;
-    }
-    .cx-bot-title {
-        font-size: 70px;
-        margin-left: 30px;
-    }.navbar {
-        height: 170px;
-    }
+}
+
+@media (min-width: 500px) {
+    .description-index-page-mobile {
+    display: none;
+}
+.sidebar-icon {
+    display: none;
+}
 }
