@@ -1,5 +1,6 @@
 html {
-    background-image: url('../public/images/background13.png');
+    background-color: #2A2D31;
+    transition: .5s;
 }
 * {
     margin: 0;
