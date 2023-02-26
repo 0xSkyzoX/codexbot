@@ -19,7 +19,7 @@ function Navbar() {
         <div className='sidebar-items'>
 
           <p className='sidebar-item'><img alt="" src='./images/features.png' className='sidebar-item-icon' /><a href='./features'>Features</a></p>
-          <p className='sidebar-item'><img alt="" src='./images/commands.png' className='sidebar-item-icon' /><a href='./commands'>Commands</a></p> alt=""
+          <p className='sidebar-item'><img alt="" src='./images/commands.png' className='sidebar-item-icon' /><a href='./commands'>Commands</a></p>
           <p className='sidebar-item'><img alt="" src='./images/i.png' className='sidebar-item-icon' /><a href='https://discord.gg/BAeqndHdea'>Support Server</a></p>
         </div>
       </div>
