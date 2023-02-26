@@ -1,5 +1,4 @@
 import React,  { useEffect }  from 'react'
-import CmdItem from '../components/commandsItem'
 import Navbar from '../components/navbar'
 import Commands from '../components/commands'
 function CommamdsPage() {
