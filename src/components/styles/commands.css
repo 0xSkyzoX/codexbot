@@ -1,0 +1,29 @@
+.upper-command {
+    display: flex;
+}
+.upper-command .upper-title-command {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 30px;
+    margin-left: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.command {
+    background-color: rgb(33, 38, 44);
+    width: 600px;
+    height: 190px;
+    margin: 20px;
+    margin-top: 3pc;
+    margin-bottom: -.5pc;
+    border-radius: 20px;
+}
+.command-icon {
+    margin: 22px;
+    background-color: rgba(240, 248, 255, 0.055);
+    padding: 8px;
+    border-radius: 15px;
+}
+.command-description {
+    margin: 1px 30px;
+    color: rgb(255, 255, 255);
+}

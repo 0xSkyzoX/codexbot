@@ -8,7 +8,7 @@ function Navbar() {
     <header className='navbar' style={{display: "flex"}}>
         <div style={{display: "flex"}}>
             <a href='/' style={{ marginTop: "auto", marginBottom: "auto", borderRadius: "30px"}}>
-            <img src='./images/codexbotavatar.png' width='43px' height='43px' style={{ borderRadius: "30px",userSelect: "none", marginLeft: "20px"}} alt="" />
+            <img src='./images/codexbotavatar.png' width='43px' height='43px' style={{ borderRadius: "100px",userSelect: "none", marginLeft: "20px"}} alt="" className='botavatar'/>
             </a>
             
             <h1 className='cx-bot-title' >CodeX</h1>
@@ -19,7 +19,7 @@ function Navbar() {
             <a className='navbar-item' href='features'>Features</a>
             
                 <Link to='/login'>
-                <button className='login-button'>Login</button></Link>
+                <button className='login-button'><p className='login-btn-name'>Login</p></button></Link>
             </div>
     </header>
   )
