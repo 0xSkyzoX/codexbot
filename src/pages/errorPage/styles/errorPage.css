@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+.error-four {
+    font-family: "Inter", sans-serif;
+    font-size: 60px;
+    color: rgb(46, 116, 173);
+    margin-top: 100px;
+}
+.error-desc {
+    color: rgb(228, 237, 237);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,27 @@
+@media (max-width: 500px) {
+    .specialcode-footer {
+        display: none;
+    }
+    .commmunity-footer {
+        display: none;
+    }
+    .about-codex {
+       display: none;
+    }
+    .followus {
+        display: none;
+    }
+    
+    #footer-title.explore-features {
+        font-size: 14px;
+        margin-left: 30px;
+    }
+    .explore-list li {
+        font-size: small;
+        margin-left: -5px;
+    }
+    .footer-rights {
+        background-color: rgba(31, 37, 42, 0.652);
+    }
+    
+}

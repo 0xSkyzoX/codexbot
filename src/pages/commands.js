@@ -2,6 +2,9 @@ import React,  { useEffect }  from 'react'
 import Navbar from '../components/navbar'
 import Commands from '../components/commands'
 import "./css/commands.css"
+import Footer from '../components/footer'
+import "../mobile/commandsPage.css"
+
 function CommamdsPage() {
     useEffect(() => {
     document.title = "CodeX - Commands"
@@ -19,7 +22,7 @@ function CommamdsPage() {
         <div style={{display: "flex", flexFlow: "row wrap", justifyContent: "center", marginBottom: "100px"}} >
           <Commands />
         </div>
-        
+        <Footer />
     </div>
   )
 }

@@ -6,15 +6,33 @@
     margin-bottom: 90px;
     margin-right: 80px;
     color: #6479c4;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
+    user-select: none;
 }
 
+.sclogo-index-page {
+    border-radius: 10px;
+    margin: 00px 25px 10px 40px;
+    border: solid 1px rgb(101, 101, 101);
+}
+
+.pc-index-page {
+    border-radius: 10px;
+    border: solid 1px rgb(101, 101, 101);
+    margin: 15px 40px 5px 15px;
+}
+
+.title-features-indexpage {
+    color: aliceblue;
+    font-family: "Inter", sans-serif;
+}
 
 .description-index-page {
     color: rgb(148, 159, 161);
-    margin: -55px 0px 0px 90px ;
+    margin: -55px 0px 0px 90px;
 }
+
 .start-button-index {
     border: solid 0;
     padding: 19px 40px 19px 40px;
@@ -26,7 +44,7 @@
     margin-left: 100px;
     transition: 0.2s;
     margin-top: -5px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 .start-button-index:hover {
@@ -65,7 +83,7 @@
 
 */
 @media (max-width: 500px) {
-    .title-index-page{
+    .title-index-page {
         margin-top: 35px;
         text-align: start;
         margin-left: 35px;
@@ -73,20 +91,25 @@
         margin-bottom: 0;
         font-size: 34px;
     }
+
     .img-coding-index {
         display: none;
-        
+
     }
+
     .navbar-item {
         display: none;
     }
+
     .description-index-page {
         font-size: 11px;
         margin: 0;
     }
+
     .description-index-page {
         display: none;
     }
+
     .description-index-page-mobile {
         display: flex;
         color: rgb(194, 194, 194);
@@ -94,23 +117,102 @@
         font-size: 11px;
         margin-left: 31px;
     }
+
     .start-button-index {
         padding: 13px 28px;
         font-size: 12px;
         border-radius: 10px;
         margin: 20px 0px 0px 36px;
     }
+
     .botavatar {
         display: none;
     }
-    
+    #features-index-img {
+        display: none;
+    }
+    #features-index-img-mobile.cc-img {
+        margin-left: 19px;
+    }
+    #features-index-img-mobile {
+        width: 75px;
+        height: 75px;
+        border-radius: 15px;
+        border: solid 1px grey ;
+    }
+    #features-index-item {
+        margin: 50px 0px;
+    }
+    #features-index-title {
+        font-size: 20px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 15px;
+    }
+    #features-index-description {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
 }
+
 
 @media (min-width: 500px) {
     .description-index-page-mobile {
-    display: none;
+        display: none;
+    }
+#features-index-item {
+    margin: 50px 30px;
 }
-.sidebar-icon {
-    display: none;
+    .sidebar-icon {
+        display: none;
+    }
+
+    #features-index-content-inside {
+        display: flex;
+    }
+    #features-index-title.pc {
+        display: flex;
+        margin-left: auto;
+    }
+    #features-index-description.pc-descrip {
+        text-align: end;
+        margin-right: 0;
+        margin-left: 20%;
+    }
+    #features-index-tide.pc-tide {
+        margin-right: 20px;
+    }
+    #features-index-img-mobile {
+        display: none;
+    }
+    #features-index-description {
+        margin-right: 30%;
+    }
+    
 }
+#features-index-title {
+    color: #6479c4;
+    transition: .2s;
 }
+#features-index-tide {
+    margin-top: auto;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+#features-index-description {
+    color: rgb(211, 211, 211);
+    margin-top: 10px;
+}
+.features-index-title {
+    display: flex;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    color: white;
+    margin: 70px 30px 60px 30px;
+}
+#features-index-img {
+    border-radius: 15px;
+    border: solid 1px grey;
+}
+

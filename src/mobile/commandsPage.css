@@ -1,0 +1,15 @@
+@media (max-width: 500px) {
+    .command {
+        width: 90%;
+        height: 90%;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    .command-description {
+        font-size: small;
+        
+    }
+    .page-title-commands {
+        font-size: 30px;
+    }
+}

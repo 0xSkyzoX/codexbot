@@ -15,18 +15,31 @@ function Navbar() {
   return (
     <div>
       <div id="sidebar" className='inactive'>
-        <img alt='' src='./images/x.png' width='35px' style={{display: "flex", marginLeft: "auto", marginRight: "8px", marginTop: "8px"}} onClick={() => {closeSidebar()}}></img>
+        <div style={{display: "flex"}}>
+          <img alt='' src='./images/codexbotavatar.png' style={{borderRadius: "30px", position: "relative",marginBottom: "0px",border: "solid 1px grey", margin: "10px" }} width='32px'></img>
+          <h3 style={{color: "#7289da", marginTop: "auto", marginBottom: "auto"}}>CodeX</h3>
+          <img alt='' src='./images/arrow-custom.png' width='17px' height='20px' style={{display: "flex", marginLeft: "auto", marginRight: "15px", marginTop: "auto", marginBottom: "auto"}} onClick={() => {closeSidebar()}}></img>
+        </div>
+        <hr style={{border: "solid 1px grey"}}></hr>
+        
         <div className='sidebar-items'>
-
-          <p className='sidebar-item'><img alt="" src='./images/features.png' className='sidebar-item-icon' /><a href='./features'>Features</a></p>
-          <p className='sidebar-item'><img alt="" src='./images/commands.png' className='sidebar-item-icon' /><a href='./commands'>Commands</a></p>
-          <p className='sidebar-item'><img alt="" src='./images/i.png' className='sidebar-item-icon' /><a href='https://discord.gg/BAeqndHdea'>Support Server</a></p>
+          <Link to='./features' style={{textDecoration: "none"}}>
+          <p className='sidebar-item'><img alt="" src='./images/features.png' className='sidebar-item-icon' /><span>Features</span></p>
+          </Link >
+         <Link to='./commands' style={{textDecoration: "none"}}>
+         <p className='sidebar-item'><img alt="" src='./images/commands.png' className='sidebar-item-icon' /><span>Commands</span></p>
+         </Link>
+        
+         <p className='sidebar-item' onClick={() => {window.open('https://discord.gg/BAeqndHdea')}}><img alt="" src='./images/i.png' className='sidebar-item-icon' /><span>Support Server</span></p>
+        
+          
+          
         </div>
       </div>
       <header className='navbar' style={{display: "flex"}}>
       
         <div style={{display: "flex"}}>
-          <img alt="" className="sidebar-icon" onClick={() => {document.getElementById('sidebar').classList.remove('inactive')}} src='./images/menu2.png' width='40px' height='40px'></img>
+          <img alt="" className="sidebar-icon" onClick={() => {document.getElementById('sidebar').classList.remove('inactive')}} src='./images/menu3.png' width='40px' height='40px'></img>
             <a href='/' style={{ marginTop: "auto", marginBottom: "5px", borderRadius: "30px"}}>
             <img src='./images/codexbotavatar.png' width='43px' height='43px' style={{ borderRadius: "100px",userSelect: "none", marginLeft: "20px"}} alt="" className='botavatar'/>
             </a>
