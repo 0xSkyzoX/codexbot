@@ -6,7 +6,7 @@ function Footer() {
     return (
         <div style={{  padding: "1px 0px 1px 0px", height: "auto" }} className="footer-body">
             <div style={{ display: "flex", justifyContent: "center" }}>
-                <img className='codex-logo' src='./images/codexbotavatar.png' width="45px" />
+                <img alt='' className='codex-logo' src='./images/codexbotavatar.png' width="45px" />
                 <h1 style={{ marginTop: "auto", marginBottom: "7px", marginLeft: "10px" }}>CodeX</h1>
             </div>
             <div >
@@ -46,20 +46,20 @@ function Footer() {
                             <h1 className='followus-title'>FOLLOW US</h1>
                             <div style={{ marginLeft: "25px" }}>
                                 <Link to="">
-                                    <img src='./images/facebook.png' className="follow-icon" />
+                                    <img alt='' src='./images/facebook.png' className="follow-icon" />
                                 </Link>
                                 <Link>
-                                    <img src='./images/twitter.png' className="follow-icon" />
+                                    <img alt='' src='./images/twitter.png' className="follow-icon" />
                                 </Link>
 
                                 <Link>
-                                    <img src='./images/youtube.png' className="follow-icon" />
+                                    <img alt='' src='./images/youtube.png' className="follow-icon" />
                                 </Link>
                                 <Link to=''>
-                                    <img src='./images/instagram.png' className="follow-icon" />
+                                    <img alt='' src='./images/instagram.png' className="follow-icon" />
                                 </Link>
                                 <Link to=''>
-                                    <img src='./images/link.png' className="follow-icon" />
+                                    <img alt='' src='./images/link.png' className="follow-icon" />
                                 </Link>
                             </div>
                         </div>
