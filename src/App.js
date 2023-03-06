@@ -20,12 +20,8 @@ function App() {
           <img src='./images/snap5.png' width='55%' height='280px' alt='' style={{ marginTop: "90px", opacity: 0.95 }} className="img-coding-index" />
         </div>
         <div>
-          
-            <button className="start-button-index" onClick={() => window.open('http://localhost:3001/auth/redirect')}>Get Started</button>
-          
+            <button className="start-button-index" onClick={() => window.open('http://localhost:3001/auth/redirect')}>Get Started</button>   
         </div>
-
-
       </main>
       <h1 className='features-index-title' style={{textAlign: "center"}}>See our Special Features</h1>
       <hr style={{margin: "0px 7%"}}/>
@@ -56,7 +52,7 @@ function App() {
                <img alt='' src='./images/codexsupport.png' width='140px' id='features-index-img-mobile' className='cc-img' />
             </div>
          
-          <p id='features-index-description' className='pc-descrip' >CodeX Powered by Special Code, se we support all special code features, like posting code, and projects, ext... and you can link your special code account and customize your special code content... learn more about special code launching!</p>
+          <p id='features-index-description' className='pc-descrip' >CodeX Support Server, This is a Discord server helps you to communicate and talking about programming, design, ai... anything about Technology! and you can share your project there and make your experience with coding bot features!</p>
           </div>
           <img alt='' src='./images/codexsupport.png' width='140px' id='features-index-img' />
         </div>

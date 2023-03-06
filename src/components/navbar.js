@@ -39,7 +39,7 @@ function Navbar() {
       <header className='navbar' style={{display: "flex"}}>
       
         <div style={{display: "flex"}}>
-          <img alt="" className="sidebar-icon" onClick={() => {document.getElementById('sidebar').classList.remove('inactive')}} src='./images/menu3.png' width='40px' height='40px'></img>
+          <img alt="" className="sidebar-icon" onClick={() => {document.getElementById('sidebar').classList.remove('inactive')}} src='./images/menu5.png' width='40px' height='32px'></img>
             <a href='/' style={{ marginTop: "auto", marginBottom: "5px", borderRadius: "30px"}}>
             <img src='./images/codexbotavatar.png' width='43px' height='43px' style={{ borderRadius: "100px",userSelect: "none", marginLeft: "20px"}} alt="" className='botavatar'/>
             </a>
