@@ -15,13 +15,13 @@ function App() {
             <h1 className='title-index-page'>Let's start a<br />Coding server<br />With CodeX bot</h1>
             <p className='description-index-page-mobile'>Make your coding experience with your own Community server, Code Debuging, Posting Codes, Share Projects...</p>
             <p className='description-index-page'>Make your coding experience with your own Community <br />server, Code Debuging, Posting Codes, Share Projects...</p>
+            <button className="start-button-index" onClick={() => window.open('http://localhost:3001/auth/redirect')}>Get Started</button>   
           </div>
 
-          <img src='./images/snap5.png' width='55%' height='280px' alt='' style={{ marginTop: "90px", opacity: 0.95 }} className="img-coding-index" />
+          <img src='./images/snap5.png' width='55%' height='35%' alt='' style={{ marginTop: "90px", opacity: 0.95 }} className="img-coding-index" />
         </div>
-        <div>
-            <button className="start-button-index" onClick={() => window.open('http://localhost:3001/auth/redirect')}>Get Started</button>   
-        </div>
+        
+            
       </main>
       <h1 className='features-index-title' style={{textAlign: "center"}}>See our Special Features</h1>
       <hr style={{margin: "0px 7%"}}/>
