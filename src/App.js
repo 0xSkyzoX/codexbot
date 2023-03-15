@@ -18,7 +18,7 @@ function App() {
             <button className="start-button-index" onClick={() => window.open('http://localhost:3001/auth/redirect')}>Get Started</button>   
           </div>
 
-          <img src='./images/snap5.png' width='55%' height='35%' alt='' style={{ marginTop: "90px", opacity: 0.95 }} className="img-coding-index" />
+          <img src='./images/snap5.png' width='55%' height='35%' alt='' style={{ marginTop: "90px", opacity: 0.9 }} className="img-coding-index" />
         </div>
         
             

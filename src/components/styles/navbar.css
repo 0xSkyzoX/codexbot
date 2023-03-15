@@ -8,10 +8,11 @@
     font-size: 28px;
 }
 .bot-avatar {
-    border-radius: 30px;
+    border-radius: 0px;
     margin-top: 7px;
     margin-left: 15px;
     cursor: pointer;
+    border: solid 1px white;
 }
 
 .navbar-item {

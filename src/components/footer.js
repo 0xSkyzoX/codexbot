@@ -10,7 +10,7 @@ function Footer() {
                 <h1 style={{ marginTop: "auto", marginBottom: "7px", marginLeft: "10px" }}>CodeX</h1>
             </div>
             <div >
-                <div style={{ display: "flex" }}>
+                <div style={{ display: "flex", justifyContent: "center", fontSize: "1.2rem" }}>
                     <div>
                         <div>
                             <h1 id='footer-title' className='explore-features'>Explore Features</h1>
