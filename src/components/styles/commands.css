@@ -19,13 +19,28 @@
     text-shadow: 1px 1px 9px rgba(90, 128, 179, 0.219);
 }
 .command {
-    background-color: rgb(33, 38, 44);
+    background-color: rgb(33, 35, 37);
+    border: solid 1px rgba(78, 78, 78, 0.795);
     width: 600px;
     height: 190px;
-    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
     margin-top: 3pc;
     margin-bottom: -.5pc;
     border-radius: 20px;
+    cursor: pointer;
+    transition: 0.1s;
+    box-shadow: 0px 0px 10px rgba(22, 22, 27, 0.165);
+}
+@media (max-width: 1900px) {
+    .command {
+        width: 50rem;
+    }
+}
+.command:hover {
+    padding: 5px 1px 5px 10px;
+    box-shadow: -30px 15px 10px rgba(22, 22, 27, 0.164);
+    margin: 30px -5px 0px 45px;
 }
 .command-icon {
     margin: 22px;
