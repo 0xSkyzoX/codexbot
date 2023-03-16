@@ -12,7 +12,7 @@ function Navbar() {
     <div>
       <div id="sidebar" className='inactive'>
         <div style={{display: "flex"}}>
-          <img alt='' src='./images/codexbotavatar.png' style={{borderRadius: "30px", position: "relative",marginBottom: "0px",border: "solid 1px grey", margin: "10px" }} width='32px' className='botavatar'></img>
+          <img alt='' src='./images/codexbotavatar.png' style={{borderRadius: "30px", position: "relative",marginBottom: "0px",border: "solid 1px grey", margin: "10px" }} width='32px' ></img>
           <h3 style={{color: "#7289da", marginTop: "auto", marginBottom: "auto"}}>CodeX</h3>
           <img alt='' src='./images/arrow-custom.png' width='17px' height='20px' style={{display: "flex", marginLeft: "auto", marginRight: "15px", marginTop: "auto", marginBottom: "auto"}} onClick={() => {closeSidebar()}}></img>
         </div>
