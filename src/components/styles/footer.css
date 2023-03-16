@@ -49,3 +49,24 @@
     margin: 0px 12px;
     cursor: pointer;
 }
+@media (max-width: 1157px) {
+    .specialcode-footer {
+        display: none;
+    }
+    
+}
+@media (max-width: 968px) {
+    .commmunity-footer {
+        display: none;
+    }
+}
+@media (max-width: 700px) {
+    .about-codex {
+        display: none;
+    }
+}
+@media (max-width: 608px) {
+    .followus {
+        display: none;
+    }
+}

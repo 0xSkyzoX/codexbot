@@ -278,11 +278,19 @@
     .img-coding-index {
         display: none
     }
-    .title-index-page {
-        
+    
+}
+@media (max-width: 915px) {
+    .img-coding-index {
+        min-width: 130px;
+        height: 150px;
     }
 }
-
+@media (max-width: 1158px) {
+    #features-index-img {
+        min-width: 150px;
+    }
+}
 @media (min-width: 500px) {
     .description-index-page-mobile {
         display: none;

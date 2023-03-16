@@ -29,18 +29,33 @@
     margin-bottom: -.5pc;
     border-radius: 20px;
     cursor: pointer;
-    transition: 0.1s;
+    transition: 0.3s;
     box-shadow: 0px 0px 10px rgba(22, 22, 27, 0.165);
 }
-@media (max-width: 1900px) {
+@media (max-width: 1363px) {
+    .command {
+        width: 35rem;
+    }
+}
+@media (min-width: 1438px) {
+    .command {
+        width: 39rem;
+    }
+}
+@media (min-width: 1650px) {
+    .command {
+        width: 45rem;
+    }
+}
+@media (min-width: 1858px) {
     .command {
         width: 50rem;
     }
 }
 .command:hover {
     padding: 5px 1px 5px 10px;
-    box-shadow: -30px 15px 10px rgba(22, 22, 27, 0.164);
-    margin: 30px -5px 0px 45px;
+    box-shadow: -35px 6px 10px rgba(22, 22, 27, 0.164);
+    margin: 40px -5px -10px 74px;
 }
 .command-icon {
     margin: 22px;
