@@ -24,7 +24,12 @@ function App() {
             
       </main>
       <h1 className='features-index-title' style={{textAlign: "center"}}>See our Special Features</h1>
-      <hr style={{margin: "0px 7%"}}/>
+      <hr style={{margin: "0px 7%", 
+  border: "0",
+  height: "3px",
+  backgroundImage: "linear-gradient(0deg, grey, transparent)",
+
+}}/>
       <div id="features-index-item">
         <div id='features-index-content-inside'>
           <img alt='' src='./images/sclogo.png' width='140px' id='features-index-img' />
@@ -41,7 +46,9 @@ function App() {
           
         </div>
       </div>
-      <hr style={{margin: "0 40% 0px 1%"}}></hr>
+      <hr style={{margin: "0 40% 0px 1%",  border: "0",
+  height: "3px",
+  backgroundImage: "linear-gradient(90deg, grey, transparent)",}}></hr>
       <div id="features-index-item">
         <div id='features-index-content-inside'>
           
@@ -57,7 +64,9 @@ function App() {
           <img alt='' src='./images/codexsupport.png' width='140px' id='features-index-img' />
         </div>
       </div>
-      <hr style={{margin: "0 1% 0 40%"}}/>
+      <hr style={{margin: "0 1% 0 40%",  border: "0",
+  height: "3px",
+  backgroundImage: "linear-gradient(-90deg, grey, transparent)",}}/>
       <div id="features-index-item">
         <div id='features-index-content-inside'>
           <img alt='' src='./images/codexbotavatar.png' width='140px' id='features-index-img'/>
@@ -76,7 +85,9 @@ function App() {
         </div>
         
       </div>
-      <hr style={{margin: "70px 7%"}}/>
+      <hr style={{margin: "70px 7%",  border: "0",
+  height: "3px",
+  backgroundImage: "linear-gradient(0deg, grey, transparent)",}}/>
       <Footer />
     </div>
   )
