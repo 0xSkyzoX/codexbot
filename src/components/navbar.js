@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./styles/navbar.css"
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faDiscord} from "@fortawesome/free-brands-svg-icons"
+import {faTerminal, faStar, faHome} from "@fortawesome/fontawesome-free-solid"
 function Navbar() {
     function closeSidebar() {
       document.getElementById('sidebar').classList.add("inactive")
@@ -10,19 +12,23 @@ function Navbar() {
     <div>
       <div id="sidebar" className='inactive'>
         <div style={{display: "flex"}}>
-          <img alt='' src='./images/codexbotavatar.png' style={{borderRadius: "30px", position: "relative",marginBottom: "0px",border: "solid 1px grey", margin: "10px" }} width='32px'></img>
+          <img alt='' src='./images/codexbotavatar.png' style={{borderRadius: "30px", position: "relative",marginBottom: "0px",border: "solid 1px grey", margin: "10px" }} width='32px' className='botavatar'></img>
           <h3 style={{color: "#7289da", marginTop: "auto", marginBottom: "auto"}}>CodeX</h3>
           <img alt='' src='./images/arrow-custom.png' width='17px' height='20px' style={{display: "flex", marginLeft: "auto", marginRight: "15px", marginTop: "auto", marginBottom: "auto"}} onClick={() => {closeSidebar()}}></img>
         </div>
-        <hr style={{border: "solid 1px grey"}}></hr>
+        <hr style={{border: "0", backgroundImage: "linear-gradient(90deg, grey, transparent)",height: "2px"}}></hr>
+        
         <div className='sidebar-items'>
-          <Link to='./features' style={{textDecoration: "none"}}>
-          <p className='sidebar-item'><img alt="" src='./images/features.png' className='sidebar-item-icon' /><span>Features</span></p>
-          </Link >
-         <Link to='./commands' style={{textDecoration: "none"}}>
-         <p className='sidebar-item'><img alt="" src='./images/commands.png' className='sidebar-item-icon' /><span>Commands</span></p>
-         </Link>
-         <p className='sidebar-item' onClick={() => {window.open('https://discord.gg/BAeqndHdea')}}><img alt="" src='./images/i.png' className='sidebar-item-icon' /><span>Support Server</span></p>
+        <a href='/' style={{textDecoration: "none"}}>
+          <p className='sidebar-item'><FontAwesomeIcon icon={faHome} className="sidebar-item-icon"/><span>Home</span></p>
+          </a >
+          <a href='/features' style={{textDecoration: "none"}}>
+          <p className='sidebar-item'><FontAwesomeIcon icon={faStar} className="sidebar-item-icon"/><span>Features</span></p>
+          </a >
+         <a href='/commands' style={{textDecoration: "none"}}>
+         <p className='sidebar-item'><FontAwesomeIcon icon={faTerminal}  className="sidebar-item-icon"/><span>Commands</span></p>
+         </a>
+         <p className='sidebar-item' onClick={() => {window.open('https://discord.gg/BAeqndHdea')}}><FontAwesomeIcon icon={faDiscord} className= "sidebar-item-icon"/><span>Support Server</span></p>
         </div>
       </div>
       <header className='navbar' style={{display: "flex"}}>
@@ -34,9 +40,9 @@ function Navbar() {
             <h1 className='cx-bot-title' >CodeX</h1>
         </div>
             <div className='navbar-items'>
-            <a className='navbar-item' href='/commands'>Commands</a>
-            <a className='navbar-item' href='https://discord.gg/BAeqndHdea'>Support Server</a>
-            <a className='navbar-item' href='features'>Features</a>
+            <a id='commands-nav' className='navbar-item' href='/commands'>Commands</a>
+            <a id='discord-nav' className='navbar-item' href='https://discord.gg/BAeqndHdea'>Support Server</a>
+            <a id='features-nav' className='navbar-item' href='features'>Features</a>
                 <Link to='/login'>
                 <button className='login-button'><p className='login-btn-name'>Login</p></button></Link>
             </div>
@@ -45,4 +51,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Navbar;

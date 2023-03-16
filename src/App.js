@@ -10,8 +10,8 @@ function App() {
     <div>
       <Navbar />
       <main >
-        <div style={{ display: "flex" }}>
-          <div>
+        <div style={{ display: "flex" }} className="flexing-index-intro">
+          <div className='index-intro-content'>
             <h1 className='title-index-page'>Let's start a<br />Coding server<br />With CodeX bot</h1>
             <p className='description-index-page-mobile'>Make your coding experience with your own Community server, Code Debuging, Posting Codes, Share Projects...</p>
             <p className='description-index-page'>Make your coding experience with your own Community <br />server, Code Debuging, Posting Codes, Share Projects...</p>

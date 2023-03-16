@@ -14,11 +14,12 @@
     
     #footer-title.explore-features {
         font-size: 14px;
-        margin-left: 30px;
+        margin-left: -30px;
+        margin-right: 60px;
     }
     .explore-list li {
         font-size: small;
-        margin-left: -5px;
+        margin-left: -60px;
     }
     .footer-rights {
         background-color: rgba(31, 37, 42, 0.652);

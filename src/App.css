@@ -1,23 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 
 .title-index-page {
-    margin-left: 4rem;
-    margin-top: 5rem;
-    margin-bottom: 90px;
-    margin-right: 2rem;
-    color: #416aff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 4rem;
-    user-select: none;
-    text-shadow: 0px 0px 2px #5a74d1f3;
-    backdrop-filter: blur(5px);
-    transition: 0.1s;
-}
-.title-index-page {
-    margin-left: 4rem;
-    margin-top: 5rem;
-    margin-bottom: 90px;
-    margin-right: 2rem;
+    
     color: #416aff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 4rem;
@@ -77,21 +61,48 @@
     .start-button-index {
         margin-top: 1.8rem;
         margin-left: 10rem;
-        padding: 30px 65px;
+        padding: 20px 40px;
         font-size: 17px;
     }
 }
 
-@media (max-width:1480px ) {
+@media (min-width:1280px ) {
     .img-coding-index {
-        display: none;
+        max-width: 45rem;
     }
     .title-index-page {
-        display: flex;
-        justify-content: center;
+        margin-left: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 90px;
+    margin-right: 2rem;
     }
+    
+}
+@media (max-width: 620px) {
+    .title-index-page {
+        font-size: 50px;
+    }
+}
+@media (max-width: 1280px) {
+    .index-intro-content {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .description-index-page {
+        margin: 0;
+        margin-top: 5px;
+    }
+    .title-index-page{
+        margin-top: 3rem;
+    }
+    .start-button-index {
+        margin-left: 0;
+    }
+    
 
 }
+
 @media (min-width: 1647px) {
     .img-coding-index {
         margin-left: 5rem;
@@ -193,6 +204,10 @@
         display: none;
 
     }
+    .start-button-index {
+        display: flex;
+        justify-content: start;
+    }
 
     .navbar-item {
         display: none;
@@ -200,7 +215,12 @@
 
     .description-index-page {
         font-size: 11px;
-        margin: 0;
+        margin-left: 15px;
+        text-align: right;
+        margin-right: 20px;
+        display: flex;
+        justify-content: start;
+
     }
 
     .description-index-page {
@@ -229,7 +249,8 @@
         display: none;
     }
     #features-index-img-mobile.cc-img {
-        margin-left: 19px;
+        margin-left: auto;
+        margin-right: 30px;
     }
     #features-index-img-mobile {
         width: 75px;
@@ -304,7 +325,7 @@
 #features-index-tide {
     margin-top: auto;
     margin-bottom: 40px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 #features-index-description {
     color: rgb(211, 211, 211);
