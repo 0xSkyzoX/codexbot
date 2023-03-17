@@ -1,0 +1,26 @@
+.features-page-title {
+     font-family: monospace;
+     background: linear-gradient(50deg, #b9b9b9 20%, rgb(163, 162, 162) 40%, rgb(105, 116, 161) 60%, #bdbdbd 80%);
+     background-size: 200% auto;
+     -webkit-text-stroke: 1px rgb(218, 218, 218);
+     color: #d4d4d4;
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     
+     animation: shine 10s linear infinite;
+     
+   }
+@keyframes shine {
+       to {
+         background-position: 200% center;
+       }
+     }
+
+     .description-features-page {
+          color: #dddddd;
+     }
+
+.a-btn-features {
+  color: #3f6ff5;
+}

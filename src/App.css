@@ -206,7 +206,6 @@
     }
     .start-button-index {
         display: flex;
-        justify-content: start;
     }
 
     .navbar-item {
@@ -219,7 +218,6 @@
         text-align: right;
         margin-right: 20px;
         display: flex;
-        justify-content: start;
 
     }
 
@@ -312,10 +310,15 @@
     #features-index-description.pc-descrip {
         text-align: end;
         margin-right: 0;
-        margin-left: 20%;
+        display: flex;
+        margin-left: auto;
+        width: 80%;
     }
     #features-index-tide.pc-tide {
         margin-right: 20px;
+        display: flex;
+        margin-left: auto;
+
     }
     #features-index-img-mobile {
         display: none;
@@ -349,5 +352,9 @@
 #features-index-img {
     border-radius: 15px;
     border: solid 1px grey;
+    margin-left: 60px;
 }
-
+#features-index-img.cxs {
+    margin-left: auto;
+    margin-right: 60px;
+}
