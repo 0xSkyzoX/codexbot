@@ -8,7 +8,13 @@ function FeaturePage() {
     <div>
      <Navbar />
      <IntroFeature />
-     <Footer />
+     <div>
+      Hello World
+     </div>
+     <div style={{marginTop: "30rem"}}>
+       <Footer />
+     </div>
+    
     </div>
   )
 }

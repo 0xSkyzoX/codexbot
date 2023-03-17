@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faShare, faCode,faStar, faCodeBranch, faPeopleCarry, faMoon, faPlusCircle, faFire, faPenSquare, faQuestionCircle} from "@fortawesome/fontawesome-free-solid"
-import { faTeamspeak } from '@fortawesome/free-brands-svg-icons'
+
+import {faShare, faCode,faStar, faCodeBranch, faMoon, faPlusCircle, faFire, faPenSquare, faQuestionCircle} from "@fortawesome/fontawesome-free-solid"
+
 
 const data = [
      {
