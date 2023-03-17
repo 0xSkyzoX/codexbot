@@ -24,3 +24,9 @@
 .a-btn-features {
   color: #3f6ff5;
 }
+
+@media (max-width: 1500px) {
+  .features-page-title {
+    font-size: 3.2rem;
+  }
+}

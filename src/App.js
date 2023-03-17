@@ -52,7 +52,6 @@ function App() {
             </div>
           <p id='features-index-description' className='pc-descrip' >CodeX Support Server, This is a Discord server helps you to communicate and talking about programming, design, ai... anything about Technology! and you can share your project there and make your experience with coding bot features!</p>
             </div>
-            
           </div>
           <img alt='' src='./images/codexsupport.png' width='140px' id='features-index-img' className='cxs'/>
         </div>

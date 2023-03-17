@@ -1,0 +1,56 @@
+.card-title {
+     color: aliceblue;
+     margin-top: 1.5rem;
+     -webkit-text-stroke: 1px rgba( 235, 235, 235, 0.459);
+     background: -webkit-linear-gradient(90deg,#eee, #8f73ad);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-size: 1.9rem;
+}
+.card-icon {
+     margin-top: 2px;
+     margin-right: 10px;
+     color: #1e72d3;
+     font-size: 2.2rem;
+}
+.card-litle-desc {
+     color: #d5d1da;
+     margin-left: 20px;
+     margin-top: 20px;
+}
+.hr-line-card {
+     margin: 20px;
+     border: 0;
+     height: 2px;
+     background-image: linear-gradient(20deg, rgba(109, 109, 109, 0.432), transparent);
+}
+.features-coding {
+     list-style-type: none;
+     font-size: 1.2rem;
+     color: #d5d1da;
+     font-family: monospace;
+}
+.features-coding li {
+     margin-left: -15px;
+     margin-top: 10px;
+     margin-bottom: 5px;
+     
+}
+.icon-code {
+     margin-right: 20px;
+     color: #8f73ad;
+}
+
+.footer-title {
+     color: #d5d1da;
+     font-weight: 700;
+     display: flex;
+     justify-content: center;
+     margin-top: 6px;
+     margin-bottom: auto;
+}
+.footer-title .icon-build {
+     color: #ffffff;
+     margin-right: 15px;
+     margin-top: 2px;
+}
