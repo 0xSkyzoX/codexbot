@@ -10,9 +10,10 @@ import FeaturePage from './pages/features';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Router>
-      <Route path='/'>
-        <Route exact elements={<App />} />
-
+      <Route path='/*'>
+        <Route exact path="/">
+          <App />
+        </Route>
       <Route path='/commands'  >
         <CommamdsPage />
       </Route>
