@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { BrowserRouter as Router, Route  } from 'react-router-dom';
+import { BrowserRouter as Router, Redirect, Route, Switch  } from 'react-router-dom';
 import CommamdsPage from './pages/commands';
 import ErrorPage from './pages/errorPage/error';
 import FeaturePage from './pages/features';
@@ -10,7 +10,7 @@ import FeaturePage from './pages/features';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Router>
-      <Route path='/*'>
+      
         <Route exact path="/">
           <App />
         </Route>
@@ -20,8 +20,6 @@ root.render(
       <Route path='/features' >
         <FeaturePage />
         </Route>
-      </Route>
-      
     </Router>
 
 );
