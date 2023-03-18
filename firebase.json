@@ -1,7 +1,6 @@
 {
   "hosting": {
     "public": "build",
-    "site": "codexbot.xyz",
     "ignore": [
       "firebase.json",
       "**/.*",
