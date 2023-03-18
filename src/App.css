@@ -4,6 +4,16 @@
     
     color: #416aff;
     font-family: Arial, Helvetica, sans-serif;
+    
+    user-select: none;
+    text-shadow: 0px 0px 2px #5a74d1f3;
+    backdrop-filter: blur(5px);
+    transition: 0.1s;
+}
+.title-index-page-fr {
+    
+    color: #416aff;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 4rem;
     user-select: none;
     text-shadow: 0px 0px 2px #5a74d1f3;
@@ -50,7 +60,12 @@
 
 @media (min-width: 1900px) {
     .title-index-page {
-        font-size: 4.5rem;
+        font-size: 5rem;
+        margin-right: 4rem;
+        margin-left: 8.5rem;
+    }
+    .title-index-page-fr {
+        font-size: 100px;
         margin-right: 4rem;
         margin-left: 8.5rem;
     }
@@ -76,11 +91,21 @@
     margin-bottom: 90px;
     margin-right: 2rem;
     }
+    .title-index-page-fr {
+        margin-left: 4rem;
+        margin-top: 5rem;
+        margin-bottom: 90px;
+        margin-right: 2rem;
+        font-size: 3.2rem;
+    }
     
 }
 @media (max-width: 620px) {
     .title-index-page {
         font-size: 50px;
+    }
+    .title-index-page-fr  {
+        font-size: 40px;
     }
 }
 @media (max-width: 1280px) {
@@ -99,6 +124,9 @@
     .start-button-index {
         margin-left: 0;
     }
+    .title-index-page-fr {
+        margin-left: 0;
+    }
     
 
 }
@@ -110,6 +138,9 @@
     .title-index-page {
         font-size: 4.7rem;
     }
+    .title-index-page-fr {
+        font-size: 3.9rem;
+    }
    
     
 }
@@ -120,6 +151,9 @@
 }
 @media (min-width:1629px) {
     .title-index-page {
+        margin-left: 7rem;
+    }
+    .title-index-page-fr {
         margin-left: 7rem;
     }
     .description-index-page {
@@ -135,6 +169,9 @@
     }
     .title-index-page {
         margin-left: 8.5rem;
+    }
+    .title-index-page-fr {
+        margin-left: 9rem;
     }
     .description-index-page {
         margin-left: 9rem;
@@ -192,6 +229,14 @@
 */
 @media (max-width: 500px) {
     .title-index-page {
+        margin-top: 35px;
+        text-align: start;
+        margin-left: 35px;
+        margin-right: 0;
+        margin-bottom: 0;
+        font-size: 34px;
+    }
+    .title-index-page-fr {
         margin-top: 35px;
         text-align: start;
         margin-left: 35px;

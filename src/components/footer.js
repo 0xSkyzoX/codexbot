@@ -15,6 +15,7 @@ function Footer() {
     const c4 = t("footer.footerElement4", {returnObjects: true})
     const c5 = t("footer.footerElement5", {returnObjects: true})
     const c6 = t("footer.footerElement6", {returnObjects: true})
+    const getLang = localStorage.getItem("lang")
     function CovertLangAl(lg) {
         if (lg === "English") {
             return "en"
@@ -56,7 +57,7 @@ function Footer() {
                             </ul>
                         </div>
                     </div>
-                    <div style={{ marginTop: "", marginBottom: "30px" }}>
+                    <div style={getLang === "fr" ? {display: "none"}: { marginTop: "", marginBottom: "30px" } }>
                         <h1 id='footer-title' className='explore-features'>{ti[2]}</h1>
                         <ul style={{ listStyleType: "none" }} className="explore-list">
                             <li><a href='/projects'>{c3[0]}</a></li>
@@ -90,7 +91,7 @@ function Footer() {
                         </div>
 
                     </div>
-                    <div style={{ marginTop: "0", marginLeft: "-150px", marginBottom: "30px" }} className="about-codex">
+                    <div style={getLang ? {marginLeft: "20px"}:{ marginTop: "0", marginLeft: "-150px", marginBottom: "30px" }} className="about-codex">
                         <h1 id='footer-title' className='explore-features'>{ti[3]}</h1>
                         <ul style={{ listStyleType: "none" }} className="explore-list">
                             <li><a href='/projects'>{c4[0]}</a></li>
@@ -133,7 +134,7 @@ function Footer() {
                     if (e.target.className === "lang-btn" || "icon-langauge" || "lang-span") {
                         setIsLangMunuClicked(!islangMenuClicked)
                     }
-                     
+                    
                     const langStorage = localStorage.getItem("lang")
                     if (e.target.innerHTML === "English" ||e.target.innerHTML === "Franch" ||e.target.innerHTML === "Arabic") {
                         var langType = CovertLangAl(e.target.innerHTML)
@@ -146,11 +147,7 @@ function Footer() {
                             window.localStorage.setItem("lang", langType)
                             window.location.reload()
                         }
-                        
                     }
-                    
-                    
-                    
                 }} style={islangMenuClicked ? {marginTop: "-68px"} : {marginTop: "0"} } >
                 <div style={{ display: "block" }}>
                 <div className={islangMenuClicked ? "show-lang-menu" : "hide-lang-menu"}>
