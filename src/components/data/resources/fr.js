@@ -1,10 +1,12 @@
-{
+import {faShare, faCode,faStar, faCodeBranch, faMoon, faPlusCircle, faFire, faPenSquare, faQuestionCircle} from "@fortawesome/fontawesome-free-solid";
+import commands from "./commands-fr.json"
+const fr = {
      "indexPage": {
           "indexTitle": ["Commençons un", "Serveur de codage", "Avec le bot CodeX"],
           "indexDescription": "Faites votre expérience de codage avec votre propre serveur communautaire, débogage de code, publication, partage de projets...",
           "indexGetstarted": "Commencer",
           "indexTitleFeatures": "Voir nos fonctionnalités spéciales",
-          "indexDescriptionMobile": ["Faites votre expérience de codage avec votre propre serveur Community",", débogage de code, publication, partage de projets..."],
+          "indexDescriptionMobile": ["Faites votre expérience de codage avec votre propre serveur", ",Community débogage de code, publication, partage de projets..."],
           "indexItemTitleFeatures": [
                "Prise en charge des codes spéciaux",
                "Communauté de codage",
@@ -79,5 +81,31 @@
                "Projets de codes spéciaux",
                "En savoir plus"
           ]
-     }
+     },
+     featuresPage: {
+          title: ["Démarrez votre codage "," Expérience avec "," Nos fonctionnalités"],
+          description: ["Mieux vaut essayer avec nos fonctionnalités, apprendre, profiter et coder pendant que vous "," Utilisation de nos fonctionnalités sera la meilleure, essayez nos fonctionnalités ici!"],
+          data:[{
+               "name": "Équipe Codage",
+               "describe": "• Profitez et codez avec votre équipe!",
+               "items": ["Activité de codage"," Code Night"," démarrer sa propre équipe","Challenge de codage"],
+               "sponsor": "Special Code",
+               "icons": [faStar, faMoon, faPlusCircle, faFire],
+               "id": "first",
+               "icon": faCode
+          },{
+               "name": "Code de Projet",
+               "describe": "• Démarrez et gérez votre projet",
+               "items": ["Partager Project "," Ajouter un travail d'équipe "," Gérer facilement "," Obtenez le support"],
+               "sponsor": "CodeX",
+               "id": "two",
+               "icons": [faShare, faPlusCircle, faPenSquare, faQuestionCircle],
+               "icon": faCodeBranch
+          }
+
+          ]  
+     },
+     commandsPage: commands
 }
+
+export default fr

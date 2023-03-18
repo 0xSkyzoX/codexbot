@@ -1,7 +1,5 @@
 
 import {faShare, faCode,faStar, faCodeBranch, faMoon, faPlusCircle, faFire, faPenSquare, faQuestionCircle} from "@fortawesome/fontawesome-free-solid"
-
-
 const data = [
      {
           icon: faCode,

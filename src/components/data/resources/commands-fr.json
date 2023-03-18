@@ -1,0 +1,42 @@
+{
+     "pageTitle": ["Explorez plus de fonctionnalités ","et découvrez nos meilleures commandes"],
+     "commands": [
+          {
+              "href": "./commands/build",
+              "title": "/build",
+              "description": "Commande pour construire des messages, intégrer ou un message normal, et personnaliser les détails du message, envoyer également un DM. Aider les modérateurs à publier toutes les nouvelles utilisant l'intégration et d'autres choses!",
+              "icon": "./images/hammer.png"
+          },
+          {
+              "href": "./commands/system",
+              "title": "/system",
+              "icon": "./images/gear.png",
+              "description": "Toutes les commandes système dont vous avez besoin pour orginiser votre serveur, canal welcone, journaux, mises à jour ... et de nombreuses commandes système, vous pouvez commencer maintenant votre expérience avec elle!"
+          },
+          {
+              "href": "./commands/project",
+              "title": "/project",
+              "icon": "./images/bar-chart.png",
+              "description": "En fait, nous soutenons vos projets et vos idée, tout ce qui concerne le projet de programmation, votre site Web ... cela va vraiment vous aider à partager ou à orginiser votre projet Easy!"
+          },
+          {
+              "href": "./commands/post",
+              "title": "/post",
+              "icon": "./images/envelope-with-arrow.png",
+              "description": "Partagez votre code et obtenez l'aide des autres, ou vous pouvez partager votre idée de codage ... Ajoutez des commentaires également réagir à la publication, débogage du code, partagez votre magnifique code ... commencez votre expérience maintenant!"
+          },
+          {
+              "href": "./commands/code",
+              "title": "/code",
+              "icon": "./images/computer.png",
+              "description": "Voir nos fonctionnalités de codage, vous pouvez coder avec l'équipe de code spécial et construire votre projet ou créer un code source pour votre code, la programmation est l'avenir!"
+          },
+          {
+              "href": "./commands/team",
+              "title": "/team",
+              "icon": "./images/busts-in-silhouette.png",
+              "description": "Démarrez votre propre équipe de programmation et travaillez entre elles sur votre projet, partagez votre idée avec votre équipe, travaillez dur et personnalisez vos projets! Rendez-vous facile ..."
+          }
+      ]
+
+}

@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 
 .title-index-page {
-    
+    margin-right: 5px;
     color: #416aff;
     font-family: Arial, Helvetica, sans-serif;
-    
+    font-size: 3.5rem;
     user-select: none;
     text-shadow: 0px 0px 2px #5a74d1f3;
     backdrop-filter: blur(5px);
     transition: 0.1s;
 }
 .title-index-page-fr {
-    
+    margin-right: 5px;
     color: #416aff;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 4rem;
+    font-size: 3.5rem;
     user-select: none;
     text-shadow: 0px 0px 2px #5a74d1f3;
     backdrop-filter: blur(5px);

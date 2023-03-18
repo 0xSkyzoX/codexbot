@@ -32,8 +32,6 @@ function Footer() {
             <div style={{ display: "flex", justifyContent: "center" }}>
                 <img alt='' className='codex-logo' src='./images/codexbotavatar.png' width="45px" />
                 <h1 style={{ marginTop: "auto", marginBottom: "7px", marginLeft: "10px" }}>CodeX</h1>
-
-
             </div>
             <div >
                 <div style={{ display: "flex", justifyContent: "center", fontSize: "1.2rem" }}>
@@ -57,7 +55,7 @@ function Footer() {
                             </ul>
                         </div>
                     </div>
-                    <div style={getLang === "fr" ? {display: "none"}: { marginTop: "", marginBottom: "30px" } }>
+                    <div style={getLang === "fr" ? {display: "none"} : { marginLeft: "-10px",marginBottom: "5px"} }>
                         <h1 id='footer-title' className='explore-features'>{ti[2]}</h1>
                         <ul style={{ listStyleType: "none" }} className="explore-list">
                             <li><a href='/projects'>{c3[0]}</a></li>
@@ -66,9 +64,7 @@ function Footer() {
                             <li><a href='/code' >{c3[3]}</a></li>
                             <li><a href='/code' >{c3[4]}</a></li>
                         </ul>
-
                         <div className='followus'>
-
                             <h1 className='followus-title'>FOLLOW US</h1>
                             <div style={{ marginLeft: "25px" }}>
                                 <Link to="">
@@ -91,7 +87,7 @@ function Footer() {
                         </div>
 
                     </div>
-                    <div style={getLang ? {marginLeft: "20px"}:{ marginTop: "0", marginLeft: "-150px", marginBottom: "30px" }} className="about-codex">
+                    <div style={getLang === "fr"? {marginLeft: "20px"}:{ marginTop: "0", marginLeft: "-150px", marginBottom: "30px" }} className="about-codex">
                         <h1 id='footer-title' className='explore-features'>{ti[3]}</h1>
                         <ul style={{ listStyleType: "none" }} className="explore-list">
                             <li><a href='/projects'>{c4[0]}</a></li>
@@ -139,6 +135,9 @@ function Footer() {
                     if (e.target.innerHTML === "English" ||e.target.innerHTML === "Franch" ||e.target.innerHTML === "Arabic") {
                         var langType = CovertLangAl(e.target.innerHTML)
                         setIsLangMunuClicked(islangMenuClicked)
+                        if (langStorage === langType) {
+                            return console.log("Language Selected in Already Applied!")
+                        }
                         if (!langStorage) {
                             window.localStorage.setItem("lang", langType)
                             window.location.reload()
@@ -147,6 +146,7 @@ function Footer() {
                             window.localStorage.setItem("lang", langType)
                             window.location.reload()
                         }
+                        
                     }
                 }} style={islangMenuClicked ? {marginTop: "-68px"} : {marginTop: "0"} } >
                 <div style={{ display: "block" }}>

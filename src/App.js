@@ -27,8 +27,8 @@ function App() {
         <div style={{ display: "flex" }} className="flexing-index-intro">
           <div className='index-intro-content'>
             <h1 className={lang === "fr" ? "title-index-page-fr" : "title-index-page"}  id='indexpagetitle'>{indexTitle[0]}<br />{indexTitle[1]}<br />{indexTitle[2]}</h1>
-            <p className='description-index-page-mobile'>{t("indexPage.indexDescription")}</p>
-            <p className='description-index-page'>{mobileDescription[0]}<br />{mobileDescription[1]}</p>
+            <p className='description-index-page-mobile' >{t("indexPage.indexDescription")}</p>
+            <p className='description-index-page' style={lang === "fr" ? {marginLeft: "3.5rem"} : {}}>{mobileDescription[0]}<br />{mobileDescription[1]}</p>
             <button className="start-button-index" onClick={() => window.open('http://localhost:3001/auth/redirect')}>{t("indexPage.indexGetstarted")}</button>
           </div>
           <img src='./images/snap5.png' width='55%' height='35%' alt='' style={{ marginTop: "90px", opacity: 0.9 }} className="img-coding-index" />

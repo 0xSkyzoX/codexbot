@@ -1,7 +1,9 @@
 import CmdItem from "./commandsItem";
-import commandsData from "./data/commandsData";
+import { useTranslation } from "react-i18next";
 
 export default function Commands() {
+    const {t} = useTranslation()
+    const commandsData = t("commandsPage.commands", {returnObjects: true})
     return commandsData.map((item) => {
         return <CmdItem 
             title={item.title}
