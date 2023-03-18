@@ -9,6 +9,7 @@ import { initReactI18next } from "react-i18next"
 import i18n from "i18next"
 import en from "./components/data/resources/en"
 import fr from "./components/data/resources/fr"
+import ar from './components/data/resources/ar';
 var langType = localStorage.getItem("lang")
 i18n
   .use(initReactI18next)
@@ -19,6 +20,9 @@ i18n
       },
       fr: {
         translation: fr
+      },
+      ar: {
+        translation: ar
       }
     },
     lng: langType,
