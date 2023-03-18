@@ -86,14 +86,14 @@
     
 }
 @keyframes bot-avatar {
-    from {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(50deg);
-    }
-    to {
+    20%, 100% {
         transform: rotate(360deg);
+    }
+    10% {
+        transform: rotate(90deg);
+    }
+    0% {
+        
     }
 }
 .sidebar-item {

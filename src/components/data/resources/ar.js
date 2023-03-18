@@ -2,7 +2,7 @@ import { faShare, faCode, faStar, faCodeBranch, faMoon, faPlusCircle, faFire, fa
 import commands from "./commands-ar.json"
 const ar = {
      indexPage: {
-          indexTitle: ["لنبدأ مع", "خادم الترميز", "باستخدام بوت CodeX"],
+          indexTitle: ["لنبدأ مع خادم", "الترميز باستخدام", "بوت كودكس"],
           indexDescription: "جعل تجربة الترميز الخاصة بك مع خادم المجتمع الخاص بك الخاص بك، وتصحيح الأخطاء في الترميز، ونشر ومشاركة المشاريع...",
           indexGetstarted: "ابدأ",
           indexTitleFeatures: "انظر ميزاتنا الخاصة",
@@ -84,7 +84,7 @@ const ar = {
           ]
      },
      featuresPage: {
-          title: ["ابدأ تجربتك في البرمجة", "مع", "ميزاتنا"],
+          title: ["ابدأ تجربتك في", "البرمجة مع", "ميزاتنا"],
           description: ["التجربة الأفضل مع ميزاتنا، تعلم واستمتع واكتب البرامج بينما", "استخدام ميزاتنا سيكون الأفضل، جرب ميزاتنا هنا!"],
           data: [{
           "name": "فريق البرمجة",

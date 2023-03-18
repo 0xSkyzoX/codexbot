@@ -11,7 +11,7 @@ function Navbar() {
     }
     const {t} = useTranslation()
     const navbarItems = t('navbar.items', {returnObjects: true})
-
+    const lang = localStorage.getItem("lang")
   return (
     <div>
       <div id="sidebar" className='inactive'>
@@ -47,8 +47,8 @@ function Navbar() {
             <a id='commands-nav' className='navbar-item' href='/commands'>{navbarItems[0]}</a>
             <a id='discord-nav' className='navbar-item' href='https://discord.gg/BAeqndHdea'>{navbarItems[1]}</a>
             <a id='features-nav' className='navbar-item' href='features'>{navbarItems[2]}</a>
-                <Link to='/login'>
-                <button className='login-button'><p className='login-btn-name'>{t("navbar.button")}</p></button></Link>
+                <Link href='/login'>
+                <button className='login-button' style={lang === "ar" || lang === "fr" ? {width: "7rem"}: {}}><p className='login-btn-name'>{t("navbar.button")}</p></button></Link>
             </div>
     </header>
     </div>
