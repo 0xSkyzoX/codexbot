@@ -3,9 +3,10 @@ import "./infoCard.css"
 import CardInfoBody from './components/cardInfoBod'
 import CardInforFooter from './components/cardInfoFooter'
 function InfoCard(props) {
+  const lang = localStorage.getItem("lang")
   return (
-    <div className='features-info-card' id={props.id}>
-     <div className='card-info-body'>
+    <div className='features-info-card' style={lang === "fr" ? {width:"310px", height: "fit-content", paddingBottom:"15px"}:{}} id={props.id}>
+     <div className='card-info-body' style={lang === "fr" ? {height: "15rem"}: {}}>
           <CardInfoBody title={props.title} icons={props.icons} desc={props.desc} item={props.item} icon={props.icon}/>
      </div>
      <hr style={{border: "0",

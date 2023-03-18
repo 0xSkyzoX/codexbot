@@ -88,7 +88,7 @@ const fr = {
           data:[{
                "name": "Équipe Codage",
                "describe": "• Profitez et codez avec votre équipe!",
-               "items": ["Activité de codage"," Code Night"," démarrer sa propre équipe","Challenge de codage"],
+               "items": ["Activité de codage","Code Night","démarrer sa propre équipe","Challenge de codage"],
                "sponsor": "Special Code",
                "icons": [faStar, faMoon, faPlusCircle, faFire],
                "id": "first",
@@ -96,7 +96,7 @@ const fr = {
           },{
                "name": "Code de Projet",
                "describe": "• Démarrez et gérez votre projet",
-               "items": ["Partager Project "," Ajouter un travail d'équipe "," Gérer facilement "," Obtenez le support"],
+               "items": ["Partager Project ","Ajouter un travail d'équipe ","Gérer facilement ","Obtenez le support"],
                "sponsor": "CodeX",
                "id": "two",
                "icons": [faShare, faPlusCircle, faPenSquare, faQuestionCircle],
