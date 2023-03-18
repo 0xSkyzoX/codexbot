@@ -1,6 +1,5 @@
 import React from 'react'
 import SetInfoData from './cards/components/setData'
-import InfoCard from './cards/infoCard'
 import "./css/features.css"
 function IntroFeature() {
   return (

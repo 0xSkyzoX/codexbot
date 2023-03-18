@@ -1,7 +1,6 @@
 import React from 'react'
 import "./css/card.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faTerminal, faStar, faCodeBranch, faGraduationCap, faMoon, faPlusCircle, faFire} from "@fortawesome/fontawesome-free-solid"
 
 function CardInfoBody(props) {
   return (

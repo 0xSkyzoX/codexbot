@@ -70,3 +70,38 @@
         display: none;
     }
 }
+.lang-btn {
+    border: solid 1px #4ab4ff5e;
+    border-radius: 5px;
+    background-color: #1e203342;
+    color: aliceblue;
+    padding: 10px 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+   
+    cursor: pointer;
+    margin-top: -5px;
+}
+.lang-btn:hover {
+    background-color: #18192291;
+}
+.hide-lang-menu {
+    display: none;
+}
+.show-lang-menu {
+    background-color: #1e203342;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+.lang-menu-item {
+    color: rgb(228, 228, 228);
+    background-color: #1e203342;
+    padding: 3px 5px;
+    margin: 0px -20px;
+    font-weight: 900;
+}
+.lang-menu-item:hover {
+    background-color: #18192291;
+}
+
