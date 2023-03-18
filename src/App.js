@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import Navbar from './components/navbar'
 import "./App.css"
 import { useTranslation } from 'react-i18next'
