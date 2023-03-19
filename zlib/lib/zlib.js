@@ -1,1 +1,1 @@
-module.exports = require('./zlib_bindings');
+module.exports = require('zlib/lib/zlib_bindings');
