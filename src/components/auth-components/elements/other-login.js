@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiscord } from '@fortawesome/free-brands-svg-icons'
-import { faCodeBranch, faFileCode, faCode } from '@fortawesome/fontawesome-free-solid'
+import { faCode } from '@fortawesome/fontawesome-free-solid'
 import DiscordOAuth2 from 'discord-oauth2';
 import { useState } from 'react';
 const oauth = new DiscordOAuth2({
@@ -17,7 +17,7 @@ function handleLogin() {
   window.location.href = url;
 }
 
-var tokenx = "";
+
 function handleCallback() {
      
      const code = new URLSearchParams(window.location.search).get('code');
@@ -44,7 +44,7 @@ function OtherLogin() {
      window.localStorage.setItem("avatar", data.avatar);
      console.log(data)
      setUsername(data.username)
-     
+     console.log(username)
   })
   .catch(error => console.error(error));
   
