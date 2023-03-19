@@ -7,7 +7,7 @@ import { useState } from 'react';
 const oauth = new DiscordOAuth2({
   clientId: '1076585679687008326',
   clientSecret: 'ui_YUFcho4I52BQfdPI801tO0lNImxnL',
-  redirectUri: 'http://localhost:3000/login'
+  redirectUri: 'https://codexbot.xyz/login'
 });
 
 function handleLogin() {
