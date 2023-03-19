@@ -11,12 +11,8 @@ function App() {
   const mobileDescription = t('indexPage.indexDescriptionMobile', { returnObjects: true })
   const itemF = t("indexPage.indexItemTitleFeatures", { returnObjects: true })
   const itemD = t("indexPage.indexItemDescriptionFeatures", { returnObjects: true })
-  
-  
-  
-    
  var lang = localStorage.getItem("lang")
-  
+  var isAccess = localStorage.getItem("access_token")
     /**
      * style={lang === "fr" ? {marginRight: "15px", marginLeft: "3rem", fontSize: "15px"} : {}}
      */
@@ -29,7 +25,7 @@ function App() {
             <h1 style={lang === "ar" ? {textAlign: "end"} : {}} className={lang === "fr" ? "title-index-page-fr" : "title-index-page" }  id='indexpagetitle'>{indexTitle[0]}<br />{indexTitle[1]}<br />{indexTitle[2]}</h1>
             <p className='description-index-page-mobile' >{t("indexPage.indexDescription")}</p>
             <p className='description-index-page' style={lang === "fr" ? {marginLeft: "3.5rem"} : {}}>{mobileDescription[0]}<br />{mobileDescription[1]}</p>
-            <button className="start-button-index" style={lang === "ar"?{marginLeft: "auto",display: "flex", marginRight: "3rem"} : {}} onClick={() => window.open('http://localhost:3001/auth/redirect')}>{t("indexPage.indexGetstarted")}</button>
+            <button className="start-button-index" style={lang === "ar"?{marginLeft: "auto",display: "flex", marginRight: "3rem"} : {}} onClick={() => isAccess ? window.location.replace("https://localhost:3000/home") : window.open('http://codexbot.xyz/login')}>{t("indexPage.indexGetstarted")}</button>
           </div>
           <img src='./images/snap5.png' width='55%' height='35%' alt='' style={lang === "ar" ?{marginRight: "2rem", marginTop: "90px", opacity: 0.9}:{ marginTop: "90px", opacity: 0.9 }} className="img-coding-index" />
         </div>

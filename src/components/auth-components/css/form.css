@@ -1,0 +1,93 @@
+.big-form {
+     width: 45rem;
+     height: 30rem;
+     background-color: rgb(28, 28, 32);
+     display: flex;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 2.5rem;
+     margin-bottom: 10rem;
+     border-radius: 25px;
+     box-shadow: 1px 2px 50px rgba(18, 17, 24, 0.678);
+     border: solid 1px rgba(119, 119, 119, 0.616);    
+}
+.input-form {
+     border: solid 3px rgb(189, 189, 189);
+     padding: 9px 18px;
+     border-radius: 10px;
+     background-color: rgb(245, 245, 245);
+}
+.login-codex-title {
+     color: rgb(211, 211, 211);
+}
+.form-input-one {
+    margin-left: 5rem;
+}
+.label-login-input {
+     margin-top: 15px;
+}
+.label-text-login {
+     margin-bottom: 5px;
+     margin-left: 5px;
+     color:rgb(211, 211, 211)
+}
+.submit-btn-form {
+     margin-top: 20px;
+     margin-left: auto;
+     margin-right: auto;
+     display: flex;
+     padding: 8px 7rem;
+     border: solid 1px rgb(24, 23, 29);
+     border-radius: 5px;
+     color: aliceblue;
+     font-size: 15px;
+     cursor: pointer;
+     transition: 0.5s;
+     background-image: linear-gradient(20deg, rgb(39, 1, 255), rgb(28, 88, 255));
+}
+.submit-btn-form:hover {
+ opacity: 0.8;    
+}
+.vl {
+     border-left: 1px solid rgba(138, 138, 138, 0.658);
+     height: 480px;
+     margin-top: -6rem;
+     position: relative;
+     left: 2rem;
+   }
+
+.login-list {
+     display: flex;
+     flex-direction: column;
+}
+.login-list button {
+     margin: 10px 5px;
+     padding: 11px;
+     border: solid 1px rgba(185, 185, 185, 0.473);
+     border-radius: 5px;
+     margin-right: 15px;
+     margin-left: -20px;
+}
+.icon-discord {
+     color: rgb(255, 255, 255);
+     margin-right: 10px;
+     font-size: 15px;
+}
+.icon-sc {
+     color: aliceblue;
+     margin-right: 10px;
+}
+#other-login-button.specialcode {
+     background-color: rgb(59, 59, 59);
+}
+#other-login-button.discord {
+     background-color: rgb(63, 92, 223);
+     color: aliceblue;
+}
+#other-login-button {
+     cursor: pointer;
+     transition: 0.1s;
+}
+#other-login-button:hover {
+     opacity: 0.9;
+}

@@ -10,6 +10,7 @@ import i18n from "i18next"
 import en from "./components/data/resources/en"
 import fr from "./components/data/resources/fr"
 import ar from './components/data/resources/ar';
+import Login from './pages/login';
 var langType = localStorage.getItem("lang")
 i18n
   .use(initReactI18next)
@@ -44,6 +45,9 @@ root.render(
     </Route>
     <Route path='/features' >
       <FeaturePage />
+    </Route>
+    <Route path='/login' >
+      <Login />
     </Route>
   </Router>
 

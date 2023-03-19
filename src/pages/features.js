@@ -9,12 +9,10 @@ function FeaturePage() {
      <Navbar />
      <IntroFeature />
      <div>
-      
      </div>
      <div style={{marginTop: "30rem"}}>
        <Footer />
      </div>
-    
     </div>
   )
 }

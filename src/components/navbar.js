@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom'
 import "./styles/navbar.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faDiscord} from "@fortawesome/free-brands-svg-icons"
-import {faTerminal, faStar, faHome} from "@fortawesome/fontawesome-free-solid"
+import {faTerminal, faStar, faHome, faUserCircle, faUser, faUserAlt, faBars} from "@fortawesome/fontawesome-free-solid"
 import { useTranslation } from 'react-i18next'
+import { faBarChart, faBarcode, faNavicon } from '@fortawesome/free-solid-svg-icons'
+import Sidebar from './sidebar/sidebar'
 function Navbar() {
     function closeSidebar() {
       document.getElementById('sidebar').classList.add("inactive")
@@ -12,6 +14,7 @@ function Navbar() {
     const {t} = useTranslation()
     const navbarItems = t('navbar.items', {returnObjects: true})
     const lang = localStorage.getItem("lang")
+    const isAccess = localStorage.getItem("access_token")
   return (
     <div>
       <div id="sidebar" className='inactive'>
@@ -47,9 +50,14 @@ function Navbar() {
             <a id='commands-nav' className='navbar-item' href='/commands'>{navbarItems[0]}</a>
             <a id='discord-nav' className='navbar-item' href='https://discord.gg/BAeqndHdea'>{navbarItems[1]}</a>
             <a id='features-nav' className='navbar-item' href='features'>{navbarItems[2]}</a>
-                <Link href='/login'>
-                <button className='login-button' style={lang === "ar" || lang === "fr" ? {width: "7rem"}: {}}><p className='login-btn-name'>{t("navbar.button")}</p></button></Link>
+            {isAccess ?
+            <div><FontAwesomeIcon icon={faNavicon} style={{fontSize: "2.3rem", marginLeft: "-10px"}} className="loggedin-bar"/></div> :
+              <Link to={isAccess ? "/home" : "/login"}>
+              <button className='login-button' style={lang === "ar" || lang === "fr" ? {width: "7rem"}: {}}><p className='login-btn-name'>{t("navbar.button")}</p></button></Link>
+            }
+            
             </div>
+            <Sidebar />
     </header>
     </div>
   )
