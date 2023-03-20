@@ -12,7 +12,7 @@ function IntroFeature() {
     <div>
       <div style={lang === "ar" ? {display: 'flex', flexDirection: "row-reverse"}:{display: "flex"}}>
          <div>
-      <h1 style={lang === "ar"? {color: "whitesmoke", margin: "70px 7rem 20px 10rem", textAlign: "end"}:{color: "whitesmoke", margin: "70px 10px 20px 6rem"}} className="features-page-title">{title[0]}<br />{title[1]}<br />{title[2]}</h1>
+      <h1 style={lang === "ar"? {color: "whitesmoke", margin: "70px 7rem 20px 10rem", textAlign: "end", border: "solid 1px white"}:{color: "whitesmoke", margin: "70px 10px 20px 6rem"}} className="features-page-title">{title[0]}<br />{title[1]}<br />{title[2]}</h1>
      <p style={lang === "ar" ? {textAlign: "end", marginRight: "6rem"}:{ marginLeft: "7rem", }} className="description-features-page">{description[0]}<br/>{description[1]}</p>
       </div>
      <SetInfoData />
