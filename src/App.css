@@ -403,3 +403,7 @@
     margin-left: auto;
     margin-right: 60px;
 }
+#ar-start-btn {
+    display: flex;
+    justify-content: center;
+}
