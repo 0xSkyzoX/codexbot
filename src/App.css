@@ -58,6 +58,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
+
 @media (min-width: 1900px) {
     .title-index-page {
         font-size: 5rem;
@@ -331,9 +332,13 @@
 }
 @media (max-width: 1158px) {
     #features-index-img {
-        min-width: 150px;
+        display: none;
+    }
+    img#features-index-img {
+        display: none;
     }
 }
+
 @media (min-width: 500px) {
     .description-index-page-mobile {
         display: none;

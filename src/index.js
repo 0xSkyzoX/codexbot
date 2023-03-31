@@ -12,6 +12,7 @@ import fr from "./components/data/resources/fr"
 import ar from './components/data/resources/ar';
 import Login from './pages/login';
 import Dashboard from './dashboard';
+import NoPage from './pages/noPage';
 var langType = localStorage.getItem("lang")
 i18n
   .use(initReactI18next)
@@ -35,6 +36,7 @@ i18n
   });
 const isAuth = localStorage.getItem("access_token")
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const isAccessToFeatures = localStorage.getItem("features")
 root.render(
   <Router>
 
@@ -45,7 +47,13 @@ root.render(
       <CommamdsPage />
     </Route>
     <Route path='/features' >
-      <FeaturePage />
+      {
+        isAccessToFeatures === "feature-admin" ?
+        <FeaturePage /> 
+        :
+        <NoPage />
+      }
+      
     </Route>
     <Route path='/login' >
       <Login />
@@ -58,6 +66,7 @@ root.render(
       }
       
     </Route>
+    
   </Router>
 
 );
